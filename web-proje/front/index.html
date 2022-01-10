@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <title>Dünya Nüfus Haritası</title>
+<!--BÜTÜN GEREKLİ CSS BOOTSRAP STİL DOSYALARINI BURDA EKLEDİK-->
+<!--class kısmında eklediğmiz yerlerin hepsi css bootstrap süslemeleri-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/fontawesome-all.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+
+
+  <link rel="icon" href="images/favicon.png">
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<!-- github: enisazu - 190403065  -->
+<body data-spy="scroll" data-target=".fixed-top">
+
+
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#description">AÇIKLAMA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#features">ÖZELLİKLER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#screens">NÜFUS GRAFİĞİ OLUŞTUR</a>
+          </li>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-container">
+            <h1>Dünya Nüfusuna Erişim</h1>
+            <p class="p-large p-heading">Dünya nüfusuyla ilgili bir şey mi merak ediyorsunuz? İşte bu site tam size göre.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="image-container">
+            <img class="img-fluid" src="images/image1.jpg" alt="alternative">
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="deco-white-circle-1">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+      </div>
+      <div class="deco-white-circle-2">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+      </div>
+      <div class="deco-blue-circle">
+        <img src="images/decorative-blue-circle.svg" alt="alternative">
+      </div>
+      <div class="deco-yellow-circle">
+        <img src="images/decorative-yellow-circle.svg" alt="alternative">
+      </div>
+      <div class="deco-green-diamond">
+        <img src="images/decorative-green-diamond.svg" alt="alternative">
+      </div>
+  </header>
+
+
+
+
+
+
+  <div id="description" class="basic-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img class="img-fluid" src="images/image4.jpeg" alt="alternative">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-container">
+            <h2>İstediğin Ülkelerin Nüfüsuna Anında Ulaş</h2>
+            <p>İstediğiniz ülkeleri tek tek seçerek, nüfusu, dünyadaki sıralaması, dünyadaki nüfusunun ne kadar yer kapladığı gibi bilgilere kendi oluşturduğunuz grafik üzerinden doğrudan erişin.</p>
+            <ul class="list-unstyled li-space-lg">
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">Hızlı</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">Pratik</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-square"></i>
+                <div class="media-body">İşleyişli</div>
+              </li>
+            </ul>
+            <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">DETAYLAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="row">
+      <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+      <div class="col-lg-8">
+        <div class="image-container">
+          <img class="img-fluid" src="images/image2.jpg" alt="alternative">
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3>Amaçlar</h3>
+        <hr>
+        <p>Nüfusa Erişim</p>
+        <h4>User Feedback</h4>
+        <p>Mükemmel bir uygulama</p>
+        <ul class="list-unstyled li-space-lg">
+          <li class="media">
+            <i class="far fa-check-square"></i>
+            <div class="media-body">Özellik 1</div>
+          </li>
+          <li class="media">
+            <i class="far fa-check-square"></i>
+            <div class="media-body">Özellik 2</div>
+          </li>
+          <li class="media">
+            <i class="far fa-check-square"></i>
+            <div class="media-body">Özellik 3</div>
+          </li>
+          <li class="media">
+            <i class="far fa-check-square"></i>
+            <div class="media-body">Özellik 4</div>
+          </li>
+          <li class="media">
+            <i class="far fa-check-square"></i>
+            <div class="media-body">Özellik 5</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="tabs-container">
+
+
+            <ul class="nav nav-tabs" id="cedoTabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="far fa-clock"></i>Lorem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-list"></i>Lorem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="far fa-calendar-alt"></i>Lorem</a>
+              </li>
+            </ul>
+
+
+
+            <div class="tab-content" id="cedoTabsContent">
+
+              <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                <p><strong>Lorem</strong> Lorem.</p>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Lorem</div>
+                  </li>
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Lorem</div>
+                  </li>
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Daha ne denebilir ki</div>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                <p><strong>Lorem</strong> Mükemml uygulama</p>
+                <p><strong>On numara uygulama</strong> herkes kullanabilir</p>
+                <p><strong>Deliriyolar bu uygulamaya</strong> 7den 70e herkes hasta</p>
+              </div>
+
+
+              <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                <p><strong>Uygulamanın gücünden faydalan</strong> çünkü herkesin Zimbabwe nüfusunu bilmeye ihtiyacı var</p>
+                <ul class="list-unstyled li-space-lg">
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Çinden tut da Afrikaya bütün ülkeler var.</div>
+                  </li>
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Tereddüt etme,sen de kullan.</div>
+                  </li>
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Bu siteyi yazan yazılımcı hala daha kendiyle gurur duyuyor.</div>
+                  </li>
+                  <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Jeff bezos bu uygulamayı kullanıyor.</div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img class="img-fluid" src="images/image5.jpg" alt="alternative">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="features" class="basic-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Diğer Özellikler</h2>
+          <p class="p-heading">Lorem</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <ul class="list-unstyled li-space-lg first">
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-users fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x green"></i>
+                <i class="fas fa-code fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x red"></i>
+                <i class="fas fa-cog fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid" src="images/image3.jpg" alt="alternative">
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-unstyled li-space-lg">
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x yellow"></i>
+                <i class="fas fa-comments fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x blue"></i>
+                <i class="fas fa-rocket fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+            <li class="media">
+              <span class="fa-stack">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-download fa-stack-1x"></i>
+              </span>
+              <div class="media-body">
+                <h4>Lorem</h4>
+                <p>Lorem</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="screens" class=container>
+    <form style="margin-top:20px; text-align:center;"method='post' class="form-group" action='http://localhost:3000/postman'>
+      <label for="search">Ülke ara ve Ekle:</label><br>
+      <input type="text" class="form-control" id="search" name="search"><br>
+    </form>
+    <div class="container" style="text-align:center;"><button class="addCountry btn btn-solid-reg">Ülke Ekle</button>
+    <button class="deleteCountry btn btn-solid-reg">Ülke Sil</button>
+    <button class="createGraph btn btn-solid-reg">Grafik oluştur</button></div>
+    <p id="graphExp" style="text-align:center; margin-top:20px;">Kırmızı Dilim: Nüfüs Haritası </br>Yeşil Dilim: Dünya Sıralamsı</br>Mor Dilim:Dünyadaki Nüfus Oranı</p>
+    <div style="margin-top:20px;" class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-col first">
+            <h5>Dünya Nüfus Haritası</h5>
+            <p class="p-small">Dünya Nüfus Haritası </p>
+          </div>
+          <div class="footer-col second">
+            <h5>İletişim</h5>
+            <ul class="list-unstyled li-space-lg p-small">
+              <li class="media">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="media-body">Cihangir, Şehit Jandarma Komando, J. Kom. Er Hakan Öner Sk. No:1, 34310 Avcılar/İstanbul, Turkey</div>
+              </li>
+              <li class="media">
+                <i class="fas fa-envelope"></i>
+                <div class="media-body"><a href="">mmf@gelisim.edu.tr https://www.gelisim.edu.tr/</a></div>
+              </li>
+              <li class="media">
+                <i class="fas fa-phone-alt"></i>
+                <div class="media-body"><a href="">0212 422 70 00</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="p-small">İstanbul Gelişim Üniversitesi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- github: enisazu - 190403065  -->
+
+<!-- GRAFİK OLUŞTURMA VE DÜĞMELERİ KULLANMA FONSKİYONLARI BURDA-->
+  <script>
+  // github: melisaustun - 190403099 (grafik)
+  // ÜLKELERİ EKLEYECEĞİMİZ BOŞ ARRAYI OLUŞTURDUK
+    var countries = [];
+    //EĞER DAHA ÖNCEDEN EKLEDİĞMİZ ÜLKEYİ BU ARRAYDEN SİLMEK İSTERSEK BU FONKSİYON KULLANILIR
+    function deleteCountry(array,countryName){
+      array=array.filter(function(el){return el.country_name!=countryName});
+      console.log(array);
+      countries=array;
+    }
+    //ÜLKE EKLEDİKÇE BU ARRAYE ÜLKELERMİZ TEK TEK EKLENİR
+    function pushCountries(array) {
+      isTrue = true;
+      $.ajax({
+        url: 'http://localhost:3000/postman',
+        method: 'POST',
+        data: {
+          search: $('#search').val()
+        }
+      }).done(function(data) {
+        var obj = JSON.parse(data);
+        for (let i = 0; i < array.length; i++) {
+          //ÜLKE DAHA ÖNCE EKLENMEDİYSE ÜLKE EKLENİR
+          if (array[i].country_name.includes(obj.body.country_name)) {
+            isTrue = false;
+          }
+        }
+        if (isTrue) {
+          array.push(obj.body);
+        }
+        alert('Ülke eklendi,grafik oluşturabilir ya da ülke eklemeye devam edebilirsiniz.');
+        return;
+
+      }).fail(function() {
+        //EĞER RAPIDAPI ÜLKEYİ BULAMAZSA BU HATA VERİLİR
+        console.log('Ülke bulunamadı, lütfen ülke adını İngilizce giriniz.');
+        alert('Ülke bulunamadı, lütfen ülke adını İngilizce giriniz.');
+
+        return;
+      });
+    }
+    //massPopChart oluşturduğumuz grafiğin ta kendisidir
+  var massPopChart;
+//grafik oluşturma fonksiyonumuz
+    function createGraph() {
+      //eğer daha önceden grafik oluşturulmuşsa siler ve butona tıkladığımızda yeniden oluşturur
+      if(massPopChart!==undefined){
+        massPopChart.destroy();
+      }
+      //rapidapidan alıdğımız ülke verilerini tek tek ayrıştırır.
+      var names=countries.map(function(el){return el.country_name;});
+      var populations=countries.map(function(el){return el.population;});
+      var rankings=countries.map(function(el){return el.ranking;});
+      var world_shares=countries.map(function(el){return el.world_share;});
+      console.log(names);
+      console.log(populations);
+      console.log(rankings);
+      console.log(world_shares);
+      massPopChart=new Chart(myChart,{
+        //grafiğimizin tipi pasta grafiktir
+        type:'pie',
+        data:{
+          //grafiklerimizin verileri
+          //ülke isimleri
+          labels:names,
+          datasets:[{
+            //nüfus verileri
+            label:'Population',
+            data:populations,
+            backgroundColor:'red',
+            borderWidth:4,
+            borderColor:'#772',
+            hoverBordorWifth:3,
+            hoverBorderColor:'#000'
+          },
+        {
+          //sıralama verileri
+          label:'Ranking',
+          data:rankings,
+          backgroundColor:'green',
+          borderWidth:4,
+          borderColor:'#772',
+          hoverBordorWifth:3,
+          hoverBorderColor:'#000'
+          },
+        {
+          //dünyada ne kadar alan kapladığına dair veriler
+          label:'World Share',
+          data:world_shares,
+          backgroundColor:'purple',
+          borderWidth:4,
+          borderColor:'#772',
+          hoverBordorWifth:3,
+          hoverBorderColor:'#000'
+        }],
+          options:{
+            //burası sadece grafiğimizin konumlandırılmasıyla alakalı seçenekleri yazdığımız yerdir
+          scales:{
+            maxHeight:300,
+            height:300,
+            maxWidth:300,
+            width:300
+          },
+          layout:{
+            padding:{
+              responsive:true,
+              maintainAspectRatio:false,
+              left:50,
+              right:0,
+              bottom:0,
+              top:0
+            }
+          },
+          plugins:{
+            title:{
+              display:true,
+              text:'Countries by population',
+              fontSize:25
+            },
+            tooltip:{
+              enabled:true
+            },
+            legend:{
+              //display:false,
+              position:'right',
+              labels:{
+                fontColor:'#000'
+              }
+            }
+          }
+        }
+
+      }
+    });
+
+    }
+// github: melisaustun - 190403099
+  $('.addCountry').click(function() {
+      pushCountries(countries);
+    });
+    $('.deleteCountry').click(function() {
+      deleteCountry(countries,$('#search').val());
+      alert('Ülke silindi.');
+    });
+    $('.createGraph').click(function() {
+      if(countries.length>0){
+        createGraph();
+        $('#graphExp').css("visibility","visible");
+      }else{
+        alert('En az bir ülke ekleyin.');
+      }
+    });
+    //script dosyalarımız ekledik
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/validator.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
